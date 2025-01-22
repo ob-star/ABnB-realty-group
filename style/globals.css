@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.slick-prev,
+.slick-next {
+  color: #FF5733;  /* Change this to the color you want */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 80px;  /* Adjust size if necessary */
+}
+
+.slick-prev {
+  left: 10px;  /* Adjust the position if needed */
+}
+
+.slick-next {
+  right: 10px;  /* Adjust the position if needed */
+}

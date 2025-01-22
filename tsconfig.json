@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Menud.js", "pages/_app.js", "pages/_document.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Menud.js", "pages/_app.js", "pages/_document.js", "src/sanity/lib/users.js"],
   "exclude": ["node_modules"]
 }

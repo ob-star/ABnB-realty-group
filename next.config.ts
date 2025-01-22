@@ -10,7 +10,16 @@ const nextConfig: NextConfig = {
       hostname: 'cdn.sanity.io',
       pathname: '**',
       },
-
+      {
+        protocol: 'https',
+        hostname: 'google.com',
+        pathname: '**',
+        },
+        {
+          protocol: 'https',
+          hostname: "**",
+          pathname: '**',
+          },
       ],
       minimumCacheTTL: 60,
 
