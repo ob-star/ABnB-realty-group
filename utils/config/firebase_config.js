@@ -4,12 +4,12 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDVuNJDjbuWAZGHr4q01PFZI5Ncqv85pP4",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE,
   authDomain: "abnb-group.firebaseapp.com",
   projectId: "abnb-group",
   storageBucket: "abnb-group.firebasestorage.app",
   messagingSenderId: "912818123037",
-  appId: "1:912818123037:web:2317ea4747896a797f71f4",
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APPID,
   measurementId: "G-6271Y0V95Z"
 };
 const app = initializeApp(firebaseConfig);

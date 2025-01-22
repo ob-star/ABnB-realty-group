@@ -121,7 +121,25 @@ function Navbar() {
               </Link>
             ))}
 
+<Menu >
+      <MenuButton><UserCircle size={40} /> </MenuButton>
+      <MenuItems anchor="bottom" className='mt-3 bg-blue-700 text-black gap-10 p-4'>
+        {<MenuItem>
+        <Link href={'/profile'} className='py-2' >
+          Profile
+                    </Link>
+        </MenuItem> }
 
+        {<MenuItem>  
+        <button onClick={SignOut} className="block data-[focus]:bg-blue-100 mt-2" >
+            LogOut
+          </button>
+          
+        </MenuItem>
+        }
+       
+      </MenuItems>
+    </Menu>
           </div>
           <div className=" md:hidden ">
             <button
@@ -150,12 +168,7 @@ function Navbar() {
                   {link.name}
                 </Link>
               ))}
-
-            </div>
-          </div>
-        )}
-      </div>
-      <Menu >
+  <Menu >
       <MenuButton><UserCircle size={40} /> </MenuButton>
       <MenuItems anchor="bottom" className='mt-3 bg-blue-700 text-black gap-10 p-4'>
         {<MenuItem>
@@ -174,6 +187,11 @@ function Navbar() {
        
       </MenuItems>
     </Menu>
+            </div>
+          </div>
+        )}
+      </div>
+    
     </nav>
   );
 }
